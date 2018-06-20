@@ -74,6 +74,15 @@ nav h1 a {
     width: calc(50% - 80px);
 }
 
+/*my changes*/
+nav a, button{
+  min-width: 48px;
+  min-height: 48px;
+}
+
+img, embed, object, video{
+  max-width: 100%;
+}
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
