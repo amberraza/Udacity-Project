@@ -65,27 +65,11 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
-#breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
-}
 
-/*my changes*/
-nav a, button{
-  min-width: 48px;
-  min-height: 48px;
-}
-
-img, embed, object, video{
-  max-width: 100%;
-}
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+    flex-wrap: wrap;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -282,3 +266,15 @@ img, embed, object, video{
 #restaurant-hours td {
   color: #666;
 }
+
+nav a, button{
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/*more changes*/
+.filter-options{
+  display: flex;
+  flex-wrap: wrap;
+}
+
