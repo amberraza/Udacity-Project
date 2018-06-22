@@ -99,7 +99,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: fit-content;
   background-color: #3397DB;
   align-items: center;
 }
@@ -139,6 +139,7 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
   width: 270px;
+  display: inline-block;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -182,19 +183,7 @@ nav h1 a {
   width: 100%;
   z-index: 1000;
 }
-.inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
-}
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
-}
+
 .inside #footer {
   bottom: 0;
   position: absolute;
@@ -210,9 +199,7 @@ nav h1 a {
   text-transform: uppercase;
   line-height: 1.1;
 }
-#restaurant-img {
-	width: 90%;
-}
+
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
@@ -229,15 +216,7 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
-#restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
-}
-#reviews-container {
-  padding: 30px 40px 80px;
-}
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -272,9 +251,58 @@ nav a, button{
   min-height: 48px;
 }
 
-/*more changes*/
-.filter-options{
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (max-width: 640px){
+  .filter-options{
+    padding: 10px 3%;
+  }
+  .filter-options select{
+    width: 90%;
+  }
+  .inside #map-container {
+    width: 100%;
+  }
+  .inside #map {
+    background-color: #ccc;
+    
+    width: 100%;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    width: 100%;
+  }
+  #restaurant-img {
+    width: 100%;
+  }
 }
 
+@media screen and (min-width: 640px){
+  .filter-options{
+    display: flex;
+  }
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 87%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 50%;
+  }
+  .inside #map {
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 140px 40px 30px;
+    width: 50%;
+  }
+  #reviews-container {
+    padding: 30px 40px 80px;
+  }
+  #restaurant-img {
+    width: 90%;
+  }
+}
