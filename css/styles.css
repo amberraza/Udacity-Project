@@ -69,7 +69,8 @@ nav h1 a {
   background: #f3f3f3;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: -6px;
+    margin-top: 0px;
+    width: 100%;
 }
 /* Display list items side by side */
 #breadcrumb li {
@@ -219,7 +220,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 100%;
 }
 
 #reviews-container h2 {
@@ -346,7 +347,7 @@ nav a, button{
     position: fixed;
     right: 0;
     top: 80px;
-    width: 50%;
+    width: 43%;
   }
   .inside #map {
     background-color: #ccc;
@@ -363,6 +364,9 @@ nav a, button{
     padding: 30px 40px 80px;
   }
   #restaurant-img {
-    width: 90%;
+    width: 100%;
+  }
+  #breadcrumb{
+    width: 50%;
   }
 }
