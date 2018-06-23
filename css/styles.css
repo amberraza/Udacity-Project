@@ -65,7 +65,12 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
-
+#breadcrumb {
+  background: #f3f3f3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -6px;
+}
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
@@ -230,14 +235,11 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
-  display: block;
-  list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
-  width: 85%;
+    display: block;
+    list-style-type: none;
+    margin: 0 0 30px;
+    position: relative;
+    width: 100%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -250,6 +252,53 @@ nav a, button{
   min-width: 48px;
   min-height: 48px;
 }
+
+#reviews-list li .review-item {
+  display: flex;
+    position: relative;
+    height: 40px;
+    border-radius: 20px 0px 0px 0px;
+    background: black;
+    padding: 18px;
+    padding-bottom: 2px;
+    color: white;
+}
+#reviews-list li .title {
+  height: 45px;
+    background: black;
+    border-radius: 20px 0 0 0;
+    position: relative;
+    padding-top: 15px;
+}
+#reviews-list li .title .name {
+  position: absolute;
+    left: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+#reviews-list li .title .date {
+  position: absolute;
+    right: 12px;
+    color: lightgray;
+}
+
+#reviews-list li .content {
+  box-shadow: 0px 0px 2px 1px lightgrey;
+      padding: 10px;
+}
+
+#reviews-list li .content .rating {
+      width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #d8d841;
+    font-variant-caps: all-small-caps;
+    font-size: 20px;
+}
+
 
 @media screen and (max-width: 640px){
   .filter-options{
@@ -269,10 +318,21 @@ nav a, button{
   #restaurant-container, #reviews-container {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #fff;
-    width: 100%;
+    width: 90%;
+    padding: 5%;
   }
   #restaurant-img {
     width: 100%;
+    border-radius: 40px 0px;
+  }
+  #footer {
+        width: 100% !important;
+  }
+  #restaurants-list {
+    padding: 0px 5%;
+  }
+  #restaurants-list .restaurant-li {
+        width: 80%;
   }
 }
 
