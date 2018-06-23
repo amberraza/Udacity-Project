@@ -188,7 +188,7 @@ nav h1 a {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000000;
 }
 
 .inside #footer {
@@ -302,6 +302,30 @@ nav a, button{
     font-size: 20px;
 }
 
+#reviews-list li .content .rating.rating-5 {
+    color:white;
+    background: green;
+}
+#reviews-list li .content .rating.rating-4 {
+    color:white;
+    background: #d8d841;
+}
+#reviews-list li .content .rating.rating-3 {
+    color:white;
+    background: yellow;
+}
+#reviews-list li .content .rating.rating-2 {
+    color:white;
+    background: red;
+}
+#reviews-list li .content .rating.rating-1 {
+    color:white;
+    background: red;
+}
+#reviews-list li .content .rating.rating-0 {
+    color:white;
+    background: red;
+}
 
 @media screen and (max-width: 640px){
   .filter-options{
@@ -315,7 +339,7 @@ nav a, button{
   }
   .inside #map {
     background-color: #ccc;
-    
+    margin-top: 140px;
     width: 100%;
   }
   #restaurant-container, #reviews-container {
