@@ -11,6 +11,7 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
+  overflow-x: hidden;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -105,7 +106,7 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
+  width: inherit;
   height: fit-content;
   background-color: #3397DB;
   align-items: center;
@@ -141,7 +142,7 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
+  margin-top: 15px;
   min-height: 380px;
   padding: 25px 30px 25px;
   text-align: left;
@@ -312,7 +313,7 @@ nav a, button{
 }
 #reviews-list li .content .rating.rating-3 {
     color:white;
-    background: yellow;
+    background: #FFC200;
 }
 #reviews-list li .content .rating.rating-2 {
     color:white;
@@ -353,7 +354,7 @@ nav a, button{
     border-radius: 20px 0px 0px 0px;
   }
   #footer {
-        width: 100% !important;
+        width: inherit !important;
   }
   #restaurants-list {
     padding: 0px 5%;
