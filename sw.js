@@ -11,7 +11,6 @@ self.addEventListener('install', function(event) {
         '/js/dbhelper.js',
         '/js/main.js',
         '/js/restaurant_info.js',
-        '/data/restaurants.json',
         '/img/1.jpg',
         '/img/2.jpg',
         '/img/3.jpg',
@@ -28,6 +27,9 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
+  if(event.request.url.startsWith('http://localhost:1337/restaurants')){
+    return;
+  }
   event.respondWith(caches.match(event.request).then(function(response) {
     if (response !== undefined) {
       return response;
