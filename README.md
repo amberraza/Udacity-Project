@@ -2,6 +2,24 @@
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
+## Project Overview: Stage 2
+Clone the server repo from here:
+https://github.com/udacity/mws-restaurant-stage-2
+Install project dependancies
+# npm i
+Install Sails.js globally
+# npm i sails -g
+Start the server
+# node server
+
+Clone master branch from here for my latest submission:
+https://github.com/amberraza/Udacity-Project
+Start a simple http server to serve this directory:
+# python3 -m http.server 8000
+Visit http://localhost:8000 for the the index page.
+Note: I haven't been able to run the https server successfully so far. So hitting https://localhost:8000 will result in a 400 code response of Bad Request.
+
+
 ## Project Overview: Stage 1
 
 For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
